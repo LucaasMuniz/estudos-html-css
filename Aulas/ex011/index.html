@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/icone-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/icone-m.png" type="image/png">
+        <img src="img/icone-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    
+    <!-- MP3 WAV OGG -->
+    <audio preload="metadata" play controls>
+        <source src="midia/Drifting at 432 Hz - Unicorn Heads.mp3" type="audio/mpeg">
+        <source src="midia/Drifting at 432 Hz - Unicorn Heads.ogg" type="audio/ogg">
+        <source src="midia/Drifting at 432 Hz - Unicorn Heads.mp3" type="audio/wav">
+    </audio>
+    <p><a href="midia/Drifting at 432 Hz - Unicorn Heads.mp3">Clique para baixar o MP3</a></p>
+</body>
+</html>
